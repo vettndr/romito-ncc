@@ -27,6 +27,8 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     //Doc: https://github.com/mvrlin/nuxt-viewport
     "nuxt-viewport",
+    // Doc: https://image.nuxt.com/
+    "@nuxt/image",
     // Doc: https://formkit.com/
     "@formkit/nuxt",
   ],
@@ -41,6 +43,10 @@ export default defineNuxtConfig({
       mobile: "xs",
     },
     fallbackBreakpoint: "md",
+  },
+
+  image: {
+    prismic: {},
   },
 
   formkit: {
