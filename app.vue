@@ -1,5 +1,11 @@
+<script setup lang="ts"></script>
+
 <template>
-  <div>
-    <NuxtWelcome />
+  <div class="app">
+    <!-- <VHeader :is-home="isHome" /> -->
+    <main>
+      <NuxtPage />
+    </main>
+    <!-- <VFooter /> -->
   </div>
 </template>
