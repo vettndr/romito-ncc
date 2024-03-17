@@ -3,5 +3,9 @@
 }
 
 html {
-  @apply scroll-smooth;
+  @apply scroll-smooth bg-background;
+}
+
+p {
+  @apply text-paragraph text-sm;
 }

@@ -6,6 +6,6 @@
     <main>
       <NuxtPage />
     </main>
-    <!-- <VFooter /> -->
+    <VFooter />
   </div>
 </template>

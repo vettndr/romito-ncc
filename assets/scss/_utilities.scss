@@ -14,4 +14,8 @@
       display: none;
     }
   }
+
+  .content-space {
+    @apply py-12 lg:py-[68px];
+  }
 }
