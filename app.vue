@@ -2,7 +2,7 @@
 
 <template>
   <div class="app">
-    <!-- <VHeader :is-home="isHome" /> -->
+    <VHeader />
     <main>
       <NuxtPage />
     </main>
