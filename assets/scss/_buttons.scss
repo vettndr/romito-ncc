@@ -1,0 +1,29 @@
+@mixin button {
+  @apply bg-heading text-white w-fit px-10 py-4 text-button transition duration-300 opacity-100 flex gap-x-[15px] items-center;
+
+  svg {
+    @apply w-5 h-5;
+  }
+
+  &:hover {
+    @apply bg-hover opacity-80;
+  }
+}
+
+.button,
+.v-button {
+  @include button;
+  @apply uppercase;
+}
+
+.v-filter {
+  @apply bg-white text-heading w-fit px-10 py-4 text-button transition duration-300 opacity-100 flex gap-x-[15px] items-center border border-heading;
+
+  &:hover {
+    @apply bg-hover text-white opacity-80;
+  }
+
+  &.router-link-active.router-link-exact-active {
+    @apply bg-hover text-white opacity-80 pointer-events-none;
+  }
+}

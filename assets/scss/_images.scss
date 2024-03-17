@@ -1,0 +1,41 @@
+.v-image-screen {
+  img {
+    @apply w-full h-screen object-cover;
+  }
+}
+
+.v-image-full {
+  img {
+    @apply w-full h-full object-cover;
+  }
+}
+
+.v-image-card-feature {
+  img {
+    @apply aspect-[7/10] md:aspect-auto;
+  }
+}
+
+.v-image-footer {
+  img {
+    @apply aspect-square w-full h-full;
+  }
+}
+
+.v-image-three-photo {
+  img {
+    @apply w-full h-full object-cover aspect-[7/9] md:aspect-auto;
+  }
+}
+
+.v-image-card {
+  img {
+    @apply aspect-[9/10] md:aspect-[5/6] w-full h-full object-cover;
+  }
+}
+
+.v-image-contact {
+  img {
+    @apply w-full h-screen object-cover;
+  }
+}

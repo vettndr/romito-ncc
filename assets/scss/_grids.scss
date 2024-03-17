@@ -1,0 +1,14 @@
+@layer base {
+  .padded {
+    @apply px-5 md:px-0;
+  }
+  .gapped {
+    @apply gap-x-4 md:gap-x-[10px] xl:gap-x-6;
+  }
+  .limited {
+    @apply md:m-auto md:max-w-[964px] lg:max-w-[1160px] xl:max-w-[1280px];
+  }
+  .grid-standard {
+    @apply gapped padded limited grid grid-cols-8 md:grid-cols-12;
+  }
+}

@@ -1,0 +1,38 @@
+.v-slider {
+  .v-swiper {
+    @apply overflow-visible relative;
+
+    .swiper-pagination {
+      @apply bottom-[45px] inset-x-0 m-0 p-0 leading-[0px] absolute w-auto;
+
+      .swiper-pagination-bullet {
+        @apply m-0 mx-1 border border-white bg-transparent opacity-100;
+
+        &.swiper-pagination-bullet-active {
+          @apply bg-white;
+        }
+      }
+    }
+
+    .v-swiper-button-prev,
+    .v-swiper-button-next {
+      @apply transition-colors duration-300 absolute h-[18px] w-[9px] text-white z-10;
+
+      &::after {
+        @apply hidden;
+      }
+
+      &.swiper-button-disabled {
+        @apply text-transparent pointer-events-none;
+      }
+    }
+
+    .v-swiper-button-prev {
+      @apply left-5 md:left-[81px] bottom-[40px];
+    }
+
+    .v-swiper-button-next {
+      @apply right-5 md:right-[81px] bottom-[40px];
+    }
+  }
+}

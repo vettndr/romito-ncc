@@ -1,0 +1,17 @@
+@layer base {
+  .vertical-abs-centered {
+    @apply top-1/2 -translate-y-1/2;
+  }
+
+  .horizontal-abs-centered {
+    @apply left-1/2 -translate-x-1/2;
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
