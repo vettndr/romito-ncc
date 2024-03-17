@@ -31,6 +31,8 @@ export default defineNuxtConfig({
     "@nuxt/image",
     // Doc: https://formkit.com/
     "@formkit/nuxt",
+    // Doc: https://github.com/nuxt/fonts
+    "@nuxt/fonts",
   ],
 
   viewport: {
@@ -51,5 +53,10 @@ export default defineNuxtConfig({
 
   formkit: {
     autoImport: true,
+  },
+
+  fonts: {
+    provider: "google",
+    families: [{ name: "Jost", provider: "google", weights: [400, 600, 700] }],
   },
 })
