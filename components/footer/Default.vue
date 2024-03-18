@@ -5,13 +5,13 @@ const props = defineProps<FooterDefaultProps>()
 
 <template>
   <footer class="bg-white border-primary border-t-2">
-    <div class="grid-standard lg:py-8">
-      <div class="lg:col-span-3">
+    <div class="grid-standard py-8">
+      <div class="col-span-full pb-6 lg:pb-0 lg:col-span-3">
         <p class="text-primary font-medium">
           frase per noleggio conducente info paragrafo breve descrizione
         </p>
       </div>
-      <div class="lg:col-span-2 lg:col-start-6">
+      <div class="col-span-2 lg:col-span-2 lg:col-start-6">
         <p>
           <span class="text-primary font-medium">Sede:</span><br />
           Via indirizzo, 23<br />
@@ -19,7 +19,7 @@ const props = defineProps<FooterDefaultProps>()
           <span class="text-primary font-medium">P.Iva:</span> 333333333
         </p>
       </div>
-      <div class="lg:col-span-3 lg:col-start-9">
+      <div class="col-span-2 lg:col-span-3 lg:col-start-9">
         <p>
           <span class="text-primary font-medium">Telefono:</span><br />
           <NuxtLink to="tel:+3934033333333">+340 33333333</NuxtLink><br />
@@ -30,8 +30,8 @@ const props = defineProps<FooterDefaultProps>()
         </p>
       </div>
     </div>
-    <div class="grid-standard lg:pb-8">
-      <div class="lg:col-span-full">
+    <div class="grid-standard pb-8">
+      <div class="col-span-full">
         <p class="text-xs text-grey-300">
           <NuxtLink to="/">Privacy Policy</NuxtLink> |
           <NuxtLink to="/">Cookie Policy</NuxtLink> - Copyright @ Romito Roberto
