@@ -1,5 +1,5 @@
-import type { NavItem } from "~/components/VHeader.props"
+import type { TocItem } from "~/components/VHeader.props"
 
 export type MenuMobileProps = {
-  items: NavItem[]
+  items: TocItem[]
 }

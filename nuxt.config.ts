@@ -62,7 +62,9 @@ export default defineNuxtConfig({
 
   fonts: {
     provider: "google",
-    families: [{ name: "Jost", provider: "google", weights: [400, 600, 700] }],
+    families: [
+      { name: "Jost", provider: "google", weights: [300, 400, 600, 700] },
+    ],
   },
 
   vite: {
