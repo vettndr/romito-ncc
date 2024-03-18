@@ -12,7 +12,7 @@ const toggleMenu = (): void => {
 </script>
 
 <template>
-  <div class="menu-mobile bg-primary py-3 sm:py-4">
+  <div class="menu-mobile bg-primary py-6 sm:py-8">
     <div class="grid-standard">
       <div class="col-span-full flex items-center relative">
         <div class="font-jost font-medium tracking-widest text-white text-base">
