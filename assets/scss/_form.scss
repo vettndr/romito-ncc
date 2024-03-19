@@ -1,0 +1,35 @@
+.formkit-form {
+  @apply flex flex-col gap-y-4;
+
+  .form-label {
+    @apply font-jost text-sm font-medium pb-[14px] block;
+  }
+
+  .form-input,
+  .form-textarea {
+    @apply px-4 py-[18px] w-full font-jost text-base font-light outline-none;
+  }
+
+  .form-checkbox {
+    @apply inline-flex items-center justify-center w-4 h-4 border appearance-none m-0;
+
+    &::before {
+      @apply w-[10px] h-[10px] origin-bottom-left transition-transform duration-150;
+      content: "";
+      transform: scale(0);
+      box-shadow: inset 1em 1em #434343;
+    }
+
+    &:checked::before {
+      transform: scale(1);
+    }
+  }
+
+  .text-form-label {
+    @apply font-jost text-base font-light;
+  }
+
+  .form-message {
+    @apply font-jost text-xs font-semibold py-2;
+  }
+}

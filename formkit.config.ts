@@ -17,6 +17,11 @@ export default defineFormKitConfig({
         label: "$reset form-label",
         message: "$reset form-message",
       },
+      tel: {
+        input: "$reset form-input",
+        label: "$reset form-label",
+        message: "$reset form-message",
+      },
       email: {
         input: "$reset form-input",
         label: "$reset form-label",

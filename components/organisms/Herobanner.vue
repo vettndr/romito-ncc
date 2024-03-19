@@ -6,13 +6,13 @@ const { isMobile, isTablet } = useVViewport()
 </script>
 
 <template>
-  <section class="organisms-herobanner">
+  <section class="organisms-herobanner relative">
     <VImage v-if="isMobile" v-bind="image.mobile" />
     <VImage v-else-if="!isMobile && isTablet" v-bind="image.tablet" />
     <VImage v-else v-bind="image" class="v-image-screen" />
     <div class="absolute inset-0 z-10 hero-background" />
     <div
-      class="hero-wrapper absolute inset-x-0 z-20 top-1/2 -translate-y-1/2 grid-standard items-center"
+      class="hero-wrapper absolute inset-x-0 z-20 vertical-abs-centered grid-standard items-center"
     >
       <div class="texts lg:col-span-6 flex flex-col gap-y-6">
         <h2
@@ -24,6 +24,7 @@ const { isMobile, isTablet } = useVViewport()
           {{ subtitle }}
         </p>
       </div>
+      <FormHeroContact />
     </div>
   </section>
 </template>
