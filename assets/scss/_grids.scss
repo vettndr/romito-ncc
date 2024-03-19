@@ -6,7 +6,7 @@
     @apply gap-x-4 md:gap-x-6 lg:gap-x-4;
   }
   .limited {
-    @apply md:m-auto md:max-w-[704px] lg:max-w-[1004px];
+    @apply md:m-auto md:max-w-[704px] lg:max-w-[1164px];
   }
   .grid-standard {
     @apply gapped padded limited grid grid-cols-4 sm:grid-cols-8 lg:grid-cols-12;

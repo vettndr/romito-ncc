@@ -21,11 +21,10 @@ useSeoMeta({
 
 <template>
   <div class="homepage min-h-screen">
-    <pre>{{ dataHome?.herobanner }}</pre>
-    <!-- <OrganismsHerobanner
+    <OrganismsHerobanner
       v-if="dataHome?.herobanner"
       v-bind="dataHome?.herobanner"
     />
-    <VDynamicContent v-if="dataHome?.content" :components="dataHome?.content" /> -->
+    <!-- <VDynamicContent v-if="dataHome?.content" :components="dataHome?.content" /> -->
   </div>
 </template>

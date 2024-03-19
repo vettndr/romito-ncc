@@ -1,66 +1,13 @@
 @layer base {
   .title-herobanner {
-    @apply font-cm text-62 not-italic font-medium leading-62 tracking-5;
+    @apply font-jost text-8xl tracking-[1.2px] font-bold;
+  }
+
+  .title-herobanner-tablet {
+    @apply font-jost text-[64px] leading-none tracking-[1.2px] font-bold;
   }
 
   .title-herobanner-mobile {
-    @apply font-cm text-36 not-italic font-medium leading-40 tracking-5;
-  }
-
-  .title-article {
-    @apply font-cm text-30 not-italic font-medium leading-36 tracking-.9;
-  }
-
-  .subtitle-article {
-    @apply font-cm text-24 not-italic font-medium leading-36 tracking-.9;
-  }
-
-  .title-main {
-    @apply font-cm text-22 not-italic font-light leading-37.4 tracking-5;
-  }
-
-  .title-main-mobile {
-    @apply font-cm text-14 not-italic font-light leading-24 tracking-5;
-  }
-
-  .title-card {
-    @apply font-cm text-20 not-italic font-light leading-28 tracking-.6;
-  }
-
-  .menu-item {
-    @apply font-raleway text-11.5 not-italic font-medium leading-11.5 tracking-5;
-  }
-
-  .copyright {
-    @apply font-raleway text-10 not-italic font-normal leading-10 tracking-1.5;
-  }
-
-  p,
-  .text {
-    @apply font-raleway text-13 not-italic font-normal leading-21 tracking-1.5;
-
-    &.semibold {
-      @apply font-semibold;
-    }
-  }
-
-  .tag-card {
-    @apply font-raleway text-11 not-italic font-thin leading-11 tracking-.5;
-  }
-
-  .text-button {
-    @apply font-raleway text-12 not-italic font-medium leading-12 tracking-1.5;
-  }
-
-  .logo {
-    @apply font-glacial text-20 not-italic font-normal leading-20 tracking-5;
-  }
-
-  .logo-mobile {
-    @apply font-glacial text-18 not-italic font-normal leading-20 tracking-5;
-  }
-
-  .title-card-feature {
-    @apply font-cm text-30 font-medium leading-36;
+    @apply font-jost text-4xl tracking-[1.2px] font-bold;
   }
 }
