@@ -11,7 +11,9 @@ const props = defineProps<FooterDefaultProps>()
           frase per noleggio conducente info paragrafo breve descrizione
         </p>
       </div>
-      <div class="col-span-2 lg:col-span-2 lg:col-start-6">
+      <div
+        class="col-span-full pb-6 sm:col-span-2 lg:col-span-2 lg:col-start-6"
+      >
         <p>
           <span class="text-primary font-medium">Sede:</span><br />
           Via indirizzo, 23<br />
@@ -19,7 +21,7 @@ const props = defineProps<FooterDefaultProps>()
           <span class="text-primary font-medium">P.Iva:</span> 333333333
         </p>
       </div>
-      <div class="col-span-2 lg:col-span-3 lg:col-start-9">
+      <div class="col-span-full sm:col-span-2 lg:col-span-3 lg:col-start-9">
         <p>
           <span class="text-primary font-medium">Telefono:</span><br />
           <NuxtLink to="tel:+3934033333333">+340 33333333</NuxtLink><br />
