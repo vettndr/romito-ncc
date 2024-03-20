@@ -35,13 +35,9 @@ const handleSubmit = async (fields: any) => {
 </script>
 
 <template>
-  <div
-    class="form-hero-contact hero-form-background rounded lg:col-span-5 lg:col-start-8 lg:px-8 lg:flex lg:flex-col lg:py-10 form-secondary"
-  >
-    <h3 class="text-white text-center lg:title-form-ncc">Richiesta di NCC</h3>
-
+  <div class="form-contact rounded-lg bg-white shadow-contact p-8 form-primary">
     <FormKit
-      id="hero-contact"
+      id="contact"
       type="form"
       submit-label="Invia richiesta"
       @submit="handleSubmit"

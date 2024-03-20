@@ -1,29 +1,38 @@
 @mixin button {
-  @apply bg-heading text-white w-fit px-10 py-4 text-button transition duration-300 opacity-100 flex gap-x-[15px] items-center;
-
-  svg {
-    @apply w-5 h-5;
-  }
+  @apply w-fit px-6 py-4 transition duration-300 opacity-100 flex items-center font-jost text-base font-medium tracking-[1.5px];
 
   &:hover {
-    @apply bg-hover opacity-80;
+    @apply opacity-80;
   }
 }
 
-.button,
-.v-button {
+.button {
   @include button;
-  @apply uppercase;
-}
-
-.v-filter {
-  @apply bg-white text-heading w-fit px-10 py-4 text-button transition duration-300 opacity-100 flex gap-x-[15px] items-center border border-heading;
+  @apply border border-primary text-primary bg-white;
 
   &:hover {
-    @apply bg-hover text-white opacity-80;
+    @apply bg-primary text-white;
   }
+}
 
-  &.router-link-active.router-link-exact-active {
-    @apply bg-hover text-white opacity-80 pointer-events-none;
+.button-outline {
+  @include button;
+  @apply border border-white text-white bg-transparent;
+
+  &:hover {
+    @apply bg-white text-primary;
   }
+}
+
+.button-outline-primary {
+  @include button;
+  @apply border border-primary text-primary bg-transparent;
+
+  &:hover {
+    @apply bg-primary text-white;
+  }
+}
+
+.button-full {
+  @apply w-full;
 }

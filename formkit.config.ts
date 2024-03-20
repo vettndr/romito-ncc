@@ -34,7 +34,7 @@ export default defineFormKitConfig({
       },
       submit: {
         inner: "$reset",
-        input: "$reset button",
+        input: "$reset button-submit",
       },
       checkbox: {
         input: "$reset form-checkbox",

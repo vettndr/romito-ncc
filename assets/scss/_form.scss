@@ -29,7 +29,51 @@
     @apply font-jost text-base font-light;
   }
 
-  .form-message {
-    @apply font-jost text-xs font-semibold py-2;
+  .form-message,
+  .formkit-message {
+    @apply font-jost text-xs font-semibold py-2 text-[#ff7272];
+  }
+}
+
+.form-primary {
+  .form-input,
+  .form-textarea {
+    @apply border border-grey-200;
+  }
+
+  .form-label,
+  .text-form-label {
+    @apply text-primary;
+  }
+
+  .form-checkbox {
+    @apply border-primary;
+
+    &::before {
+      box-shadow: inset 1em 1em #434343;
+    }
+  }
+
+  .button-submit {
+    @apply button-outline-primary;
+  }
+}
+
+.form-secondary {
+  .form-label,
+  .text-form-label {
+    @apply text-white;
+  }
+
+  .form-checkbox {
+    @apply border-white;
+
+    &::before {
+      box-shadow: inset 1em 1em #ffffff;
+    }
+  }
+
+  .button-submit {
+    @apply button-outline;
   }
 }
