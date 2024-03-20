@@ -1,5 +1,5 @@
 import { capitalize } from "~/utils/capitalizeString"
-import { connectors } from "~/gql/blocks"
+import { connectors } from "~/prismic/blocks"
 
 export default (collection: any) => {
   return collection.map((item: any) => {

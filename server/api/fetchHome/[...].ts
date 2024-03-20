@@ -2,6 +2,7 @@ import { assertMethod, defineEventHandler, getRouterParams } from "h3"
 import { createClient } from "@prismicio/client"
 import fetch from "node-fetch"
 
+import slices from "~/utils/slices"
 import { connect } from "~/prismic/templates/Home"
 
 export default defineEventHandler(async (event) => {
@@ -21,6 +22,7 @@ export default defineEventHandler(async (event) => {
       meta_title
       meta_description
       meta_image
+      ${slices}
     }
   }
 `

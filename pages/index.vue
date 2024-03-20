@@ -25,6 +25,6 @@ useSeoMeta({
       v-if="dataHome?.herobanner"
       v-bind="dataHome?.herobanner"
     />
-    <!-- <VDynamicContent v-if="dataHome?.content" :components="dataHome?.content" /> -->
+    <VDynamicContent v-if="dataHome?.content" :components="dataHome?.content" />
   </div>
 </template>

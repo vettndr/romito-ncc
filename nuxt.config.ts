@@ -67,6 +67,23 @@ export default defineNuxtConfig({
     ],
   },
 
+  router: {
+    options: {
+      scrollBehaviorType: "smooth",
+    },
+  },
+
+  components: {
+    dirs: [
+      {
+        path: "~/components/content",
+        global: true,
+        prefix: "Content",
+      },
+      "~/components",
+    ],
+  },
+
   vite: {
     plugins: [
       Components({
