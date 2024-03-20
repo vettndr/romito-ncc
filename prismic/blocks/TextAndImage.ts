@@ -13,8 +13,15 @@ export function connect(data: any): TextAndImageContentProps {
     data: {
       image: connectImage(dataObj?.image),
       title: {
-        title: (asHTML(dataObj?.title, { serializer }) as string) ?? "",
-        position: "center",
+        title:
+          (asHTML(
+            dataObj?.title?.map((element: any) => ({
+              ...element,
+              isTitle: true,
+            })),
+            { serializer }
+          ) as string) ?? "",
+        position: "left",
         titleSize: dataObj?.title_size,
       },
       text: asHTML(dataObj?.text, { serializer }) as string,
@@ -23,6 +30,7 @@ export function connect(data: any): TextAndImageContentProps {
         path,
         target: dataObj?.button_link?.target ?? undefined,
       },
+      inverted: dataObj?.inverted ?? false,
     },
   }
 }

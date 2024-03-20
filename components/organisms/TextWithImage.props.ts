@@ -7,4 +7,5 @@ export type TextWithImageProps = {
   title: TitleProps
   text: string
   button?: VButtonProps
+  inverted?: boolean
 }

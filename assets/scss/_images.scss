@@ -39,3 +39,11 @@
     @apply w-full h-screen object-cover;
   }
 }
+
+.v-image-rounded {
+  @apply rounded-lg;
+
+  img {
+    @apply rounded-lg;
+  }
+}

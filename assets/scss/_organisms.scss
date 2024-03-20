@@ -1,116 +1,35 @@
-.content-space {
-  @apply py-10 md:py-[68px];
-}
-
 .organisms-text-with-image {
   .molecules-title {
-    @apply title-article text-heading;
-  }
+    @apply font-jost font-light text-primary text-xl leading-5 sm:text-2xl sm:leading-6 lg:text-5xl lg:leading-none;
 
-  .text {
-    p {
-      @apply title-card text-paragraph text-center;
+    strong {
+      @apply font-semibold block;
     }
   }
 }
 
-.organisms-feature-listing {
-  .molecules-title {
-    @apply title-card-feature text-white;
-  }
+// .rich-text-wrapper {
+//   p {
+//     @apply mb-4 last:mb-0;
+//   }
 
-  .molecules-card-feature {
-    a {
-      img {
-        @apply transition-all duration-500 brightness-[.8];
-      }
+//   a {
+//     @apply text-green underline;
+//   }
 
-      &:hover {
-        img {
-          @apply brightness-[.6];
-        }
-      }
-    }
-  }
-}
+//   ul {
+//     @apply pl-8 list-outside mb-4;
 
-.organisms-card-group,
-.organisms-article-listing {
-  .molecules-card-default {
-    a {
-      img {
-        @apply transition-all duration-500 brightness-[.8];
-      }
+//     li {
+//       @apply list-disc text mb-4 last:mb-0;
+//     }
+//   }
+// }
 
-      &:hover {
-        img {
-          @apply brightness-[.6];
-        }
-      }
-    }
-  }
-}
-
-.organisms-contact {
-  .formkit-form {
-    @apply flex flex-col gap-y-[30px];
-
-    .form-label {
-      @apply text-14 font-cm font-normal leading-16 pb-[14px] text-heading block;
-    }
-
-    .form-input,
-    .form-textarea {
-      @apply border border-grey px-4 py-[18px] w-full text-paragraph font-cm text-16 leading-[15px] font-normal outline-none;
-    }
-
-    .form-checkbox {
-      @apply inline-flex items-center justify-center w-4 h-4 border border-grey appearance-none m-0 text-paragraph;
-
-      &::before {
-        @apply w-[10px] h-[10px] origin-bottom-left transition-transform duration-150;
-        content: "";
-        transform: scale(0);
-        box-shadow: inset 1em 1em #434343;
-      }
-
-      &:checked::before {
-        transform: scale(1);
-      }
-    }
-
-    .text-form-label {
-      @apply text-14 font-cm font-normal leading-16 text-heading;
-    }
-
-    .form-message {
-      @apply text-12 font-raleway font-normal leading-12 py-2 text-[#c76363];
-    }
-  }
-}
-
-.rich-text-wrapper {
-  p {
-    @apply mb-4 last:mb-0;
-  }
-
-  a {
-    @apply text-green underline;
-  }
-
-  ul {
-    @apply pl-8 list-outside mb-4;
-
-    li {
-      @apply list-disc text mb-4 last:mb-0;
-    }
-  }
-}
-
-.organisms-text {
-  h2,
-  h3,
-  h4 {
-    @apply title-article text-heading py-10;
-  }
-}
+// .organisms-text {
+//   h2,
+//   h3,
+//   h4 {
+//     @apply title-article text-heading py-10;
+//   }
+// }

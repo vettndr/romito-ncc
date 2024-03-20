@@ -7,7 +7,6 @@ const getTitleSize = computed(() => (props.titleSize ? props.titleSize : "h2"))
 const getPositionText = computed(() =>
   props.position ? `text-${props.position}` : "text-center"
 )
-const getTitleClass = computed(() => props.titleClass)
 </script>
 
 <template>
@@ -15,9 +14,9 @@ const getTitleClass = computed(() => props.titleClass)
     <component
       v-if="getShowTitle"
       :is="getTitleSize"
-      :class="`${getTitleClass} ${getPositionText}`"
+      :class="`${getPositionText}`"
     >
-      {{ title }}
+      <span v-html="title" />
     </component>
   </div>
 </template>
