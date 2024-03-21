@@ -1,11 +1,11 @@
 .v-accordion {
-  @apply py-4 px-6 rounded-lg bg-white shadow-contact mb-4 last:mb-0;
+  @apply py-2 sm:py-4 px-3 sm:px-6 rounded-lg bg-white shadow-contact mb-4 last:mb-0;
 
   .v-accordion-button {
     @apply w-full flex justify-between items-center hover:opacity-100;
 
-    span {
-      @apply text-lg text-primary text-left w-[80%];
+    h3 {
+      @apply text-base sm:text-lg font-medium text-primary text-left w-[80%];
     }
   }
 

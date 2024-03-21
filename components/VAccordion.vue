@@ -14,7 +14,7 @@ const setOpen = (val: boolean) => {
     <Disclosure v-slot="{ open }">
       {{ setOpen(open) }}
       <DisclosureButton class="v-accordion-button">
-        <span>{{ title }}</span>
+        <h3>{{ title }}</h3>
 
         <VIconsPlus class="h-auto w-auto" :class="open && 'hidden'" />
         <VIconsMinus class="h-auto w-auto" :class="!open && 'hidden'" />
