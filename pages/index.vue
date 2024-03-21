@@ -14,11 +14,33 @@ if (errorHome.value) {
   })
 }
 
+const structuredDataHome = computed(() => ({
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  name: dataHome.value?.seo?.meta_title,
+  inLanguage: "it_IT",
+}))
+
+useHead({
+  script: [
+    {
+      id: "structureddataHome",
+      innerHTML: JSON.stringify(structuredDataHome.value),
+      type: "application/ld+json",
+    },
+  ],
+})
+
 useSeoMeta({
   title: dataHome.value?.seo?.meta_title,
   ogTitle: dataHome.value?.seo?.meta_title,
   description: dataHome.value?.seo?.meta_description,
   ogDescription: dataHome.value?.seo?.meta_description,
+  ogImage: dataHome.value?.seo?.meta_image?.url,
+  twitterTitle: dataHome.value?.seo?.meta_title,
+  twitterImage: "summary",
+  ogLocale: "it_IT",
+  ogType: "website",
 })
 </script>
 

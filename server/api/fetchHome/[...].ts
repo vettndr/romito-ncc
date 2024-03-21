@@ -44,7 +44,7 @@ export default defineEventHandler(async (event) => {
     })
   }
 
-  const { data } = response
+  const { data, first_publication_date, last_publication_date } = response
 
   if (!data) {
     throw createError({
@@ -53,5 +53,5 @@ export default defineEventHandler(async (event) => {
     })
   }
 
-  return connect(data)
+  return connect({ ...data, first_publication_date, last_publication_date })
 })

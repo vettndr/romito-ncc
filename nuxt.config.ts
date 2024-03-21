@@ -22,6 +22,18 @@ export default defineNuxtConfig({
           content: process.env.IS_PRODUCTION === "yes" ? "all" : "noindex",
         },
       ],
+      script: [
+        {
+          id: "structuredDataOrganization",
+          innerHTML: JSON.stringify({
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            name: "Romito Roberto NCC",
+            logo: process.env.BASE_URL + "/Logo_lightM.png",
+          }),
+          type: "application/ld+json",
+        },
+      ],
     },
   },
 
