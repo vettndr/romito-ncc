@@ -4,6 +4,7 @@ import { connect as TextAndServicesConnector } from "./TextAndServices"
 import { connect as TextConnector } from "./Text"
 import { connect as ServicesConnector } from "./Services"
 import { connect as FaqConnector } from "./Faq"
+import { connect as ContactConnector } from "./Contact"
 
 export const connectors = {
   Default: DefaultConnector,
@@ -12,4 +13,5 @@ export const connectors = {
   Text: TextConnector,
   Services: ServicesConnector,
   Faq: FaqConnector,
+  Contact: ContactConnector,
 }

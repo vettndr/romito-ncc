@@ -79,4 +79,17 @@ export default `slices {
         }
       }
     }
+    ...on contact {
+      variation {
+        ...on default {
+          primary {
+            title_size
+            title
+            text
+            button_link
+            button_text
+          }
+        }
+      }
+    }
   }`
