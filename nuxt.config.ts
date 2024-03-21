@@ -9,6 +9,12 @@ import screens from "./utils/screens"
 export default defineNuxtConfig({
   devtools: { enabled: false },
 
+  runtimeConfig: {
+    public: {
+      BASE_URL: process.env.BASE_URL,
+    },
+  },
+
   app: {
     head: {
       meta: [
