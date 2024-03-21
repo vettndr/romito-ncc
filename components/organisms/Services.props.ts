@@ -7,4 +7,5 @@ export type ServicesProps = {
   text: string
   button?: VButtonProps
   services: ServiceProps[]
+  menuLink?: string
 }

@@ -17,7 +17,7 @@ const closeMenu = (): void => {
           <template v-for="(navItem, index) in items" :key="index">
             <li class="text-center">
               <NuxtLink
-                :to="navItem.slug"
+                :to="`#${navItem?.slug}`"
                 @click.prevent="closeMenu()"
                 class="uppercase font-jost font-medium tracking-widest text-primary text-base"
                 >{{ navItem.label }}</NuxtLink

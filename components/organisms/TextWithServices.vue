@@ -6,7 +6,10 @@ const { isMobile, isTablet, isDesktop } = useVViewport()
 </script>
 
 <template>
-  <div class="organisms-text-with-services content-space">
+  <div
+    class="organisms-text-with-services content-space"
+    :id="menuLink ? slugify(menuLink) : ''"
+  >
     <div class="grid-standard sm:items-center">
       <div class="col-span-full sm:col-span-4 lg:col-span-5">
         <VImage v-bind="image" class="v-image-full v-image-rounded" />

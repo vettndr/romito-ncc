@@ -1,6 +1,8 @@
 import connectElements from "~/utils/connectElements"
+import slugify from "~/utils/slugify"
 import { connect as connectImage } from "../fragments/Image"
 import type { HerobannerProps } from "~/components/organisms/Herobanner.props"
+import type { TocItem } from "~/components/VHeader.props"
 
 /**
  * Connects component fragment data to module props
@@ -19,6 +21,7 @@ export const connect = (
     first_publication_date: string
     last_publication_date: string
   }
+  items: TocItem[]
 } => {
   const herobanner: HerobannerProps = {
     image: connectImage(data?.hero_image),
@@ -26,9 +29,11 @@ export const connect = (
     subtitle: data?.hero_text ?? "",
   }
 
+  const slicesData = connectElements(data?.slices)
+
   return {
     herobanner,
-    content: connectElements(data?.slices),
+    content: slicesData,
     seo: {
       meta_title: data?.meta_title ?? "",
       meta_description: data?.meta_description ?? "",
@@ -36,5 +41,10 @@ export const connect = (
       first_publication_date: data?.first_publication_date ?? "",
       last_publication_date: data?.last_publication_date ?? "",
     },
+    items:
+      slicesData?.map((slice) => ({
+        label: slice.props?.data?.menuLink,
+        slug: slugify(slice.props?.data?.menuLink),
+      })) ?? [],
   }
 }

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { headerData } from "~/data/header"
 import type { VHeaderProps } from "./VHeader.props"
 defineProps<VHeaderProps>()
 
@@ -8,13 +7,10 @@ const { isTablet, isMobile } = useVViewport()
 
 <template>
   <header>
-    <MenuDesktop
-      v-if="headerData && !isMobile && !isTablet"
-      v-bind="headerData"
-    />
+    <MenuDesktop v-if="items && !isMobile && !isTablet" :items="items" />
     <MenuMobile
-      v-if="(headerData && isMobile) || (headerData && !isMobile && isTablet)"
-      v-bind="headerData"
+      v-if="(items && isMobile) || (items && !isMobile && isTablet)"
+      :items="items"
     />
   </header>
 </template>

@@ -5,4 +5,5 @@ export type ContactProps = {
   title: TitleProps
   text: string
   button?: VButtonProps
+  menuLink?: string
 }

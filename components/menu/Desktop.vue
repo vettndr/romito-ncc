@@ -9,7 +9,7 @@ defineProps<MenuDesktopProps>()
       <nav class="col-span-10" aria-label="Main">
         <ul class="nav-list-desktop">
           <li v-for="(navItem, index) in items" :key="index">
-            <NuxtLink :to="navItem.slug">{{ navItem.label }}</NuxtLink>
+            <NuxtLink :to="`#${navItem?.slug}`">{{ navItem.label }}</NuxtLink>
           </li>
         </ul>
       </nav>

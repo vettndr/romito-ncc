@@ -32,6 +32,7 @@ export function connect(data: any): FaqContentProps {
         title: faq?.faq_title ?? "",
         content: asHTML(faq?.faq_text, { serializer }) as string,
       })),
+      menuLink: dataObj?.menu_link ?? "",
     },
   }
 }

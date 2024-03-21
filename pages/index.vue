@@ -45,11 +45,12 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="homepage min-h-screen">
+  <main class="min-h-screen">
+    <VHeader :items="dataHome?.items" />
     <OrganismsHerobanner
       v-if="dataHome?.herobanner"
       v-bind="dataHome?.herobanner"
     />
     <VDynamicContent v-if="dataHome?.content" :components="dataHome?.content" />
-  </div>
+  </main>
 </template>

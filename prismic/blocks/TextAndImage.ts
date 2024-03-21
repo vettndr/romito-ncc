@@ -31,6 +31,7 @@ export function connect(data: any): TextAndImageContentProps {
         target: dataObj?.button_link?.target ?? undefined,
       },
       inverted: dataObj?.inverted ?? false,
+      menuLink: dataObj?.menu_link ?? "",
     },
   }
 }

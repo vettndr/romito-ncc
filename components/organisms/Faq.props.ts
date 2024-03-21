@@ -7,4 +7,5 @@ export type FaqProps = {
   text: string
   button?: VButtonProps
   faqs: VAccordionProps[]
+  menuLink?: string
 }

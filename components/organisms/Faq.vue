@@ -4,7 +4,10 @@ defineProps<FaqProps>()
 </script>
 
 <template>
-  <div class="organisms-faq content-space">
+  <div
+    class="organisms-faq content-space"
+    :id="menuLink ? slugify(menuLink) : ''"
+  >
     <div class="grid-standard">
       <div class="col-span-full lg:col-span-10 lg:col-start-2 pt-10 sm:pt-0">
         <MoleculesTitle v-bind="title" />

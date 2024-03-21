@@ -11,10 +11,8 @@ const { public: envs } = useRuntimeConfig()
         :href="`${envs.BASE_URL}${$route.fullPath}`"
       />
     </Head>
-    <VHeader />
-    <main>
-      <NuxtPage />
-    </main>
+
+    <NuxtPage />
     <VFooter />
   </div>
 </template>

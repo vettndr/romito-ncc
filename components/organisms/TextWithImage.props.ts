@@ -8,4 +8,5 @@ export type TextWithImageProps = {
   text: string
   button?: VButtonProps
   inverted?: boolean
+  menuLink?: string
 }

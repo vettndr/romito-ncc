@@ -35,6 +35,7 @@ export function connect(data: any): TextAndServicesContentProps {
         title: service?.service_title ?? "",
         desc: asHTML(service?.service_text, { serializer }) as string,
       })),
+      menuLink: dataObj?.menu_link ?? "",
     },
   }
 }

@@ -10,6 +10,7 @@ export default `slices {
             button_link
             button_text
             inverted
+            menu_link
           }
         }
       }
@@ -24,6 +25,7 @@ export default `slices {
             text
             button_link
             button_text
+            menu_link
           }
           items {
             service_title
@@ -41,6 +43,7 @@ export default `slices {
             text
             button_link
             button_text
+            menu_link
           }
         }
       }
@@ -54,6 +57,7 @@ export default `slices {
             text
             button_link
             button_text
+            menu_link
           }
           items {
             service_title
@@ -71,6 +75,7 @@ export default `slices {
             text
             button_link
             button_text
+            menu_link
           }
           items {
             faq_title
@@ -88,6 +93,7 @@ export default `slices {
             text
             button_link
             button_text
+            menu_link
           }
         }
       }

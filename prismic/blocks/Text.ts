@@ -28,6 +28,7 @@ export function connect(data: any): TextContentProps {
         path,
         target: dataObj?.button_link?.target ?? undefined,
       },
+      menuLink: dataObj?.menu_link ?? "",
     },
   }
 }
