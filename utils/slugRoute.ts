@@ -6,7 +6,7 @@ export default (uri: string, type?: string, previewRef?: string): string => {
       if (previewRef) {
         return `/?ref=${previewRef}`
       }
-      return `/`
+      return ``
     default:
       return `/${formattedUrl}`
   }

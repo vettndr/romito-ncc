@@ -22,6 +22,7 @@
     "@nuxtjs/tailwindcss": "^6.11.4",
     "@prismicio/client": "^7.3.1",
     "node-fetch": "^3.3.2",
+    "nuxt-simple-sitemap": "^4.4.1",
     "nuxt-viewport": "^2.1.4",
     "sass": "^1.72.0",
     "sass-loader": "^14.1.1",

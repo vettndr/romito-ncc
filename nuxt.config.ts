@@ -56,6 +56,7 @@ export default defineNuxtConfig({
     "@formkit/nuxt",
     // Doc: https://github.com/nuxt/fonts
     "@nuxt/fonts",
+    "nuxt-simple-sitemap",
   ],
 
   viewport: {
@@ -100,6 +101,14 @@ export default defineNuxtConfig({
       },
       "~/components",
     ],
+  },
+
+  site: {
+    url: process.env.BASE_URL,
+  },
+
+  sitemap: {
+    sources: ["/api/__sitemap__/urls"],
   },
 
   vite: {
