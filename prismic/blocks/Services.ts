@@ -1,10 +1,9 @@
 import { asHTML } from "@prismicio/client"
-import type { TextAndServicesContentProps } from "~/components/content/TextAndServices.props"
-import { connect as connectImage } from "~/prismic/fragments/Image"
+import type { ServicesContentProps } from "~/components/content/Services.props"
 import linkz from "~/utils/linkz"
 import serializer from "~/utils/textSerializer"
 
-export function connect(data: any): TextAndServicesContentProps {
+export function connect(data: any): ServicesContentProps {
   const dataObj = data?.primary
   const items = data?.items
 
@@ -12,7 +11,6 @@ export function connect(data: any): TextAndServicesContentProps {
 
   return {
     data: {
-      image: connectImage(dataObj?.image),
       title: {
         title:
           (asHTML(

@@ -1,6 +1,7 @@
 .organisms-text-with-image,
 .organisms-text-with-services,
-.organisms-text {
+.organisms-text,
+.organisms-services {
   .molecules-title {
     @apply font-jost font-light text-primary text-xl leading-5 sm:text-2xl sm:leading-6 lg:text-5xl lg:leading-none;
 

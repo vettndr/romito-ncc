@@ -45,4 +45,21 @@ export default `slices {
         }
       }
     }
+    ...on services {
+      variation {
+        ...on default {
+          primary {
+            title_size
+            title
+            text
+            button_link
+            button_text
+          }
+          items {
+            service_title
+            service_text
+          }
+        }
+      }
+    }
   }`

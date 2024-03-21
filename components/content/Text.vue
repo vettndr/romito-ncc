@@ -4,7 +4,7 @@ defineProps<TextContentProps>()
 </script>
 
 <template>
-  <section class="content-text-and-image">
+  <section class="content-text">
     <OrganismsText v-bind="data" />
   </section>
 </template>
