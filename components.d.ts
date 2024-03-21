@@ -9,12 +9,17 @@ declare module 'vue' {
   export interface GlobalComponents {
     Dialog: typeof import('@headlessui/vue')['Dialog']
     DialogPanel: typeof import('@headlessui/vue')['DialogPanel']
+    Disclosure: typeof import('@headlessui/vue')['Disclosure']
+    DisclosureButton: typeof import('@headlessui/vue')['DisclosureButton']
+    DisclosurePanel: typeof import('@headlessui/vue')['DisclosurePanel']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TransitionChild: typeof import('@headlessui/vue')['TransitionChild']
     TransitionRoot: typeof import('@headlessui/vue')['TransitionRoot']
     VIconsClose: typeof import('~icons/icons/close')['default']
+    VIconsMinus: typeof import('~icons/icons/minus')['default']
     VIconsPhone: typeof import('~icons/icons/phone')['default']
+    VIconsPlus: typeof import('~icons/icons/plus')['default']
     VIconsToggle: typeof import('~icons/icons/toggle')['default']
   }
 }

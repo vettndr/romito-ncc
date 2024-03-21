@@ -1,0 +1,19 @@
+.v-accordion {
+  @apply py-4 px-6 rounded-lg bg-white shadow-contact mb-4 last:mb-0;
+
+  .v-accordion-button {
+    @apply w-full flex justify-between items-center hover:opacity-100;
+
+    span {
+      @apply text-lg text-primary text-left w-[80%];
+    }
+  }
+
+  .v-accordion-body {
+    @apply mt-4 pt-4 px-6 -mx-6 border-t border-grey-200;
+  }
+
+  // &.v-accordion-open {
+  //   @apply border border-black shadow-icon;
+  // }
+}

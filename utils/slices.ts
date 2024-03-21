@@ -62,4 +62,21 @@ export default `slices {
         }
       }
     }
+    ...on faq {
+      variation {
+        ...on default {
+          primary {
+            title_size
+            title
+            text
+            button_link
+            button_text
+          }
+          items {
+            faq_title
+            faq_text
+          }
+        }
+      }
+    }
   }`
