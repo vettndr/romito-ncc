@@ -10,6 +10,7 @@ export default defineEventHandler(async (event) => {
   const routeParams = getRouterParams(event)._.split("/")
 
   const slug = routeParams[0] ? routeParams[0] : "home"
+  const previewRef = routeParams[1] ? routeParams[1] : null
 
   const client = createClient("romitorobertoncc", { fetch })
 
@@ -33,6 +34,7 @@ export default defineEventHandler(async (event) => {
     response = await client.getByUID("home", slug, {
       lang: "it-it",
       graphQuery,
+      ref: previewRef ? previewRef : undefined,
     })
   } catch (e: any) {
     throw createError({

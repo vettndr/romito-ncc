@@ -1,6 +1,9 @@
 <script setup lang="ts">
+const route = useRoute()
 const { data: dataHome, error: errorHome } = await useFetch(
-  `/api/fetchHome/home`
+  `/api/fetchHome/home/${
+    route?.query?.ref ? encodeURIComponent(route?.query?.ref as string) : ""
+  }`
 )
 
 if (errorHome.value) {
