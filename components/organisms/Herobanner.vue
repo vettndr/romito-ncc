@@ -27,11 +27,11 @@ const { isMobile, isTablet, isDesktop } = useVViewport()
           >
             {{ title }}
           </h2>
-          <p
+          <h1
             class="text-white text-lg sm:text-xl lg:text-2xl font-jost text-center lg:text-left"
           >
             {{ subtitle }}
-          </p>
+          </h1>
         </div>
         <FormHeroContact v-if="isDesktop" />
       </div>
