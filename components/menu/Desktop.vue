@@ -15,7 +15,7 @@ defineProps<MenuDesktopProps>()
       </nav>
       <div class="col-span-2">
         <NuxtLink
-          to="https://wa.me/3402786208"
+          to="https://wa.me/3881222641"
           target="_blank"
           class="text-base tracking-[1.3px] flex justify-end gap-x-2 transition-opacity duration-300 hover:opacity-50"
           >Whatsapp <VIconsPhone
