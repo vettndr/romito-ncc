@@ -48,7 +48,7 @@ const closeModal = () => {
             <DialogPanel class="h-full w-full">
               <div class="h-full w-full relative overflow-y-scroll">
                 <div
-                  class="padded py-[18px] flex items-center justify-end mb-[60px] gap-x-2"
+                  class="padded py-[18px] flex items-center justify-end gap-x-2"
                 >
                   <span class="text-xs font-jost font-light">Chiudi</span>
                   <button
