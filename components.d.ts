@@ -17,6 +17,7 @@ declare module 'vue' {
     TransitionChild: typeof import('@headlessui/vue')['TransitionChild']
     TransitionRoot: typeof import('@headlessui/vue')['TransitionRoot']
     VIconsClose: typeof import('~icons/icons/close')['default']
+    VIconsLogo: typeof import('~icons/icons/logo')['default']
     VIconsMinus: typeof import('~icons/icons/minus')['default']
     VIconsPhone: typeof import('~icons/icons/phone')['default']
     VIconsPlus: typeof import('~icons/icons/plus')['default']

@@ -5,8 +5,11 @@ defineProps<MenuDesktopProps>()
 
 <template>
   <div class="menu-desktop bg-primary">
-    <div class="grid-standard">
-      <nav class="col-span-10" aria-label="Main">
+    <div class="grid-standard items-center">
+      <div class="col-span-1">
+        <VIconsLogo class="w-[53px] h-[43px]" />
+      </div>
+      <nav class="col-span-7 col-start-3" aria-label="Main">
         <ul class="nav-list-desktop">
           <li v-for="(navItem, index) in items" :key="index">
             <NuxtLink :to="`#${navItem?.slug}`">{{ navItem.label }}</NuxtLink>

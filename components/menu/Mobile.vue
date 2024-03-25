@@ -16,7 +16,7 @@ const toggleMenu = (): void => {
     <div class="grid-standard">
       <div class="col-span-full flex items-center relative">
         <div class="font-jost font-medium tracking-widest text-white text-base">
-          Romito Roberto NCC
+          <VIconsLogo class="w-[33px] h-[26px]" />
         </div>
         <button
           class="flex items-center gap-x-2 absolute right-0 vertical-abs-centered text-white"
